@@ -41,11 +41,11 @@ background-attachment: fixed;
 background: linear-gradient(to bottom, 
 rgba(18, 14, 41, 1), 
 rgba(18, 14, 41, 0.9), 
-rgba(18, 14, 41, 0.9),  
-rgba(58, 6, 120, 0.7),
+rgba(18, 14, 41, 0.8),  
+rgba(58, 6, 120, 0.6),
 rgba(58, 6, 120, 0.6),
 rgba(52, 0, 95, 0.7),
-rgba(52, 0, 95, 0.7),   
+rgba(52, 0, 95, 0.6),   
 rgba(18, 14, 50, 0.95),
 rgba(18, 14, 41, 1));
 background-size: cover;
@@ -66,6 +66,7 @@ h1.gradient_text1{
 background-image: linear-gradient(#FFFDBB, #FFE2FF, #FF77CD);
 background-size: 100%;
 background-repeat: repeat;
+font-family: arial;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 } /* yellow, pink, pink */
@@ -80,8 +81,9 @@ background-size: 100%;
 background-repeat: repeat;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-size: 30px;
-margin-left: 30px;
+font-family: arial;
+font-size: 35px;
+text-indent: 30px;
 } /* #FFFDBB, #FFE2FF, #E6E6E6 Yellowish_white, pale_purplish_white(?)idk , white */
 /*alternate color yellow,cyan,pink #FFF69D, #9DFBFF, #FF9DF3 */
 
@@ -113,12 +115,13 @@ padding: 10px;
 max-width: 30%;
 }
 
-img.image_aligned{
-float: none; 
-display: -webkit-tool;
-margin-left: 30px;
-padding: 0;
-max-width: 45%
+img.image_splashart{
+display: block;
+top: 50%;
+left: 50%;
+margin-left: auto;
+margin-right: auto;
+max-width: 55%
 }
 
 img.group-image{
@@ -150,13 +153,8 @@ margin-left: 50px;
 } /*82CDED-lightblue*/
 
 p.voiceline{
-font-size: 20px;
-text-align: right;
-float: right;
-color: white;
-margin-right: -10px;
-margin-left: 30px;
-padding: 0px;
+font-size: 23px;
+text-align: center;
 }
 
 
@@ -191,9 +189,11 @@ padding: 5px 30px;
 }
 
 
+
 a{ 
 color: #C2FF6D;
-text-decoration: none; 
+text-decoration: none;
+visited: #FF748D; 
 } /* Link */
 
 
