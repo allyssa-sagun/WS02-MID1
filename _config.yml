@@ -1,8 +1,1 @@
-remote_theme: pages-themes/architect@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
-gem "github-pages", group: :jekyll_plugins
-
-title: [Silver_Wolf]
-description: [A university project of making a fan-made website involving Silver Wolf from Honkai: Star Rail]
+remote_theme: jekyll-theme-
