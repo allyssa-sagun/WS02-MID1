@@ -26,6 +26,25 @@ padding: 0 20px;
 } 
 
 
+/*Scrollbar*/
+
+::-webkit-scrollbar{
+width: 12px;
+}
+
+::-webkit-scrollbar-track{
+background: #410083;
+}
+
+::-webkit-scrollbar-thumb{
+background: #9F4FD1;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background: #DF97FF;
+}
+
 
 /*THE MAIN BACKGROUND*/
 
@@ -191,10 +210,29 @@ padding: 5px 30px;
 
 
 a{ 
+position: relative;
 color: #C2FF6D;
 text-decoration: none;
-visited: #FF748D; 
 } /* Link */
+
+a.effect:after{
+content: "";
+position: absolute;
+background-color: #C2FF6D;
+height: 2px;
+width: 0;
+left: 0;
+bottom: -2px;
+transition: 0.2s;
+}
+
+a.effect:hover{
+
+}
+
+a.effect:hover:after{
+width: 100%;
+}
 
 
 
@@ -224,6 +262,21 @@ font-size: 19px;
 background-color: #8B3090;
 border-radius: 10px 10px;
 border: 10px solid #8B3090;
+}
+
+
+
+/*Hover Zoom Effect*/
+
+.zoom{
+background-color: rbga (0, 0, 0, 0,);
+max-width: 100%;
+transition: transform 0.2s;
+margin: 0;
+}
+
+.zoom:hover{
+transform: scale(1.1);
 }
 
 
