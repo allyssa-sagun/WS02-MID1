@@ -1,5 +1,5 @@
 html, body{ 
-font-family: Tahoma, arial, sans-serif; 
+font-family: Trebuchet MS, Tahoma, arial, sans-serif; 
 margin: 0; 
 color: white;
 }
@@ -17,7 +17,6 @@ p, h2, li, ol, ul{
 letter-spacing: 1;
 line-height: 1.4;
 }
-
 
 .content{ 
 max-width: 900px; 
@@ -46,8 +45,25 @@ background: #DF97FF;
 }
 
 
-/*THE MAIN BACKGROUND*/
+/*Testing float effect hehe sana pwede*/
 
+.floating { 
+animation-name: floating;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+margin-left: 30px;
+margin-top: 5px;
+}
+ 
+@keyframes floating {
+0% { transform: translate(0,  0px); }
+50%  { transform: translate(0, 15px); }
+100%   { transform: translate(0, -0px); }   
+}
+
+
+/*THE MAIN BACKGROUND*/
 
 .img_bg{
 background-image: url("images/bg4.jpg");
@@ -60,21 +76,18 @@ background-attachment: fixed;
 background: linear-gradient(to bottom, 
 rgba(18, 14, 41, 1), 
 rgba(18, 14, 41, 0.9), 
-rgba(18, 14, 41, 0.8),  
-rgba(58, 6, 120, 0.6),
-rgba(58, 6, 120, 0.6),
-rgba(52, 0, 95, 0.7),
-rgba(52, 0, 95, 0.6),   
-rgba(18, 14, 50, 0.95),
+rgba(18, 14, 41, 0.7),  
+rgba(58, 6, 120, 0.5),
+rgba(58, 6, 120, 0.5),
+rgba(52, 0, 95, 0.6),
+rgba(52, 0, 95, 0.5),   
+rgba(18, 14, 50, 0.85),
 rgba(18, 14, 41, 1));
 background-size: cover;
 } /*Transparent Gradient*/
 
 
-
-
 /*MINI HEADERS*/
-
 
 h1{ 
 font-size: 90px; 
@@ -92,6 +105,7 @@ font-family: arial;
 
 h2{
 font-style: bold;
+font-family: Tahoma, arial black, sans-serif;
 }
 
 h2.gradient_text2{
@@ -100,16 +114,13 @@ background-size: 100%;
 background-repeat: repeat;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-family: arial;
 font-size: 35px;
 text-indent: 30px;
 } /* #FFFDBB, #FFE2FF, #E6E6E6 Yellowish_white, pale_purplish_white(?)idk , white */
 /*alternate color yellow,cyan,pink #FFF69D, #9DFBFF, #FF9DF3 */
 
 
-
 /*IMAGE*/
-
 
 header img{ 
 border-radius: 90px 20px; 
@@ -129,9 +140,9 @@ max-width: 8%
 img.image_right{
 float: right; 
 display: -webkit-tool;
-margin-right: 5px;
-padding: 10px;
-max-width: 30%;
+margin-right: 10px;
+margin-top: 90px;
+max-width: 29%;
 }
 
 img.image_splashart{
@@ -146,12 +157,11 @@ max-width: 60%;
 img.group-image{
 max-width: 100%;
 border-radius: 20px 90px; 
-border: 15px solid #C87AE7; 
+border: 15px solid #AC68E8; 
 }
 
 
 /*PARAGRAPH*/
-
 
 p.summary{
 font-size: 20px;
@@ -159,14 +169,14 @@ font-size: 20px;
 
 p.quote{
 font-size: 21px;
-color: #FFF7B2;
+color: #FFF9D3;
 font-style: none;
 text-align: center;
 }
 
 p.caption{ 
-font-size: 18px; 
-color: #FFF7B2; 
+font-size: 19.5px; 
+color: ##FFF9D3; 
 font-style: italic; 
 margin-left: 50px;
 } /*82CDED-lightblue*/
@@ -177,11 +187,7 @@ text-align: center;
 }
 
 
-
-
-
 /*LISTS ETC*/
-
 
 ul{ 
 list-style: none;
@@ -207,13 +213,13 @@ font-size: 20px;
 padding: 5px 30px;
 }
 
-
+/*Links*/
 
 a{ 
 position: relative;
 color: #C2FF6D;
 text-decoration: none;
-} /* Link */
+}
 
 a.effect:after{
 content: "";
@@ -235,20 +241,18 @@ width: 100%;
 }
 
 
-
 /*TABLE*/
-
 
 table.ally{
 bgcolor:rgba(0, 0, 0, 0);
 text-align: center;
 max-width: 70%;
 font-size: 20px;
-padding: 20px;
+padding: 15px;
 }
 
 img.table_img{
-max-width: 50%;
+max-width: 70%;
 border-radius: 25px 10px;
 border: 10px solid #8B3090;
 } /*oldcolor:713090*/
@@ -265,12 +269,12 @@ border: 10px solid #8B3090;
 }
 
 
-
 /*Hover Zoom Effect*/
 
 .zoom{
-background-color: rbga (0, 0, 0, 0,);
+background-color: rgba (0, 0, 0, 0);
 max-width: 100%;
+
 transition: transform 0.2s;
 margin: 0;
 }
@@ -280,9 +284,7 @@ transform: scale(1.1);
 }
 
 
-
 /*FOOTER*/
-
 
 footer{ 
 margin-top: 40px;
@@ -297,5 +299,5 @@ footer ul li{
 display: inline-block; 
 margin: 0 5px; 
 color: lightgrey; 
-font-size: 15px;
+font-size: 18px;
 }
