@@ -47,7 +47,7 @@ background: #DF97FF;
 
 /*Testing float effect hehe sana pwede*/
 
-.floating { 
+.floating{ 
 animation-name: floating;
 animation-duration: 3s;
 animation-iteration-count: infinite;
@@ -56,7 +56,7 @@ margin-left: 30px;
 margin-top: 5px;
 }
  
-@keyframes floating {
+@keyframes floating{
 0% { transform: translate(0,  0px); }
 50%  { transform: translate(0, 15px); }
 100%   { transform: translate(0, -0px); }   
@@ -150,7 +150,7 @@ img.image_right{
 float: right; 
 display: -webkit-tool;
 margin-right: 10px;
-margin-top: 90px;
+margin-top: 145px;
 max-width: 29%;
 }
 
@@ -245,14 +245,19 @@ width: 100%;
 
 table.ally{
 bgcolor:rgba(0, 0, 0, 0);
+margin-left: 40px;
 text-align: center;
 max-width: 70%;
 font-size: 20px;
-padding: 15px;
+padding: 25px;
 }
 
 img.table_img{
-max-width: 70%;
+min-width: 125px;
+max-width: 125px;
+min-height: 125px;
+max-height: 125px;
+margin-right: 20px;
 border-radius: 25px 10px;
 border: 10px solid #8B3090;
 } /*oldcolor:713090*/
